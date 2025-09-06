@@ -18,10 +18,16 @@
     <link rel="icon" type="image/jpeg" href="logo.jpg">
 
     <meta name="theme-color" content="#1a1a1a">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <style>
 
+const SUPABASE_URL = 'https://bjjjutlfinxdwmifskdw.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJqamp1dGxmaW54ZHdtaWZza2R3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY4MzcwNTEsImV4cCI6MjA3MjQxMzA1MX0.92bnVBauAFlWY4_g_hUeEeOeAX25nFnEGLG3tpjiQyk';
+
+const supabase = Supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 * {
     box-sizing: border-box;
